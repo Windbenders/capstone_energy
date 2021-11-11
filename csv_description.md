@@ -45,3 +45,69 @@ General information:
 * start date: 2004-12-31 23:00:00
 * end date: 2021-07-13 21:00:00
 * time steps: 1 hour
+
+ 
+## 'power_act_.csv'
+
+In total we have 18 columns and 64328 rows 
+
+Coulmns names : 
+['dt_start_utc', 'power_act_21', 'power_act_24', 'power_act_47' .....]
+
+
+date ranges from '2019-06-30' to  '2021-04-30'
+
+Date seems to be recorded for every 15 minutes
+
+All the columns contains missing values only for 'power_act_21' its 1.5% whereas >20% for other features
+
+## 'power_fc_.csv'
+
+In total we have 23 columns and 66020 rows 
+
+Coulmns names : 
+['dt_start_utc', 'power_act_21', 'power_act_24', 'power_act_47' .....]
+
+
+date ranges from ''2019-06-13 07:00'' to  ''2021-04-30 23:45''
+
+Date seems to be recorded for every 15 minutes
+
+no null values for 'power_act_21'  whereas for other features >17% null values
+
+## 'regelleistung_aggr_results.csv'
+
+In total we have 17 columns and 16068 rows 
+
+Coulmns names : 
+['date_start', 'date_end', 'product', 'reserve_type', 'total_min_capacity_price_eur_mw',#   
+'total_average_capacity_price_eur_mw', 'total_marginal_capacity_price_eur_mw','total_min_energy_price_eur_mwh', 'total_average_energy_price_eur_mwh', 'total_marginal_energy_price_eur_mwh', 'germany_min_capacity_price_eur_mw',
+'germany_average_capacity_price_eur_mw', 'germany_marginal_capacity_price_eur_mw','germany_min_energy_price_eur_mwh',
+'germany_average_energy_price_eur_mwh', 'germany_marginal_energy_price_eur_mwh', 'germany_import_export_mw']
+
+2 unique reserve type ['MRL', 'SRL']
+
+12 unique product type ['NEG_00_04', 'NEG_04_08', 'NEG_08_12', 'NEG_12_16', 'NEG_16_20','NEG_20_24', 'POS_00_04', 'POS_04_08', 'POS_08_12', 'POS_12_16', 'POS_16_20', 'POS_20_24']
+
+date ranges from '2019-01-01' to  '2021-03-19'
+
+Date seems to be recorded for every hours (24 values for each days)
+
+Few columns contains missing values of about 37%
+
+## 'regelleistung_demand.csv'
+
+In total we have 6 columns and 16188 rows 
+
+Coulmns names : ['date_start', 'date_end', 'product', 'total_demand_mw',
+    'germany_block_demand_mw', 'reserve_type']
+
+2 unique reserve type ['MRL', 'SRL']
+
+12 unique product type ['NEG_00_04', 'NEG_04_08', 'NEG_08_12', 'NEG_12_16', 'NEG_16_20','NEG_20_24', 'POS_00_04', 'POS_04_08', 'POS_08_12', 'POS_12_16', 'POS_16_20', 'POS_20_24']
+
+date ranges from '2019-01-01' to  '2021-03-18'
+
+Date seems to be recorded for every hours (24 values for each days)
+
+no missing values 
