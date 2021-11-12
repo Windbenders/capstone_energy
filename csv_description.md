@@ -51,7 +51,7 @@ General information:
 
 In total we have 18 columns and 64328 rows 
 
-Coulmns names : 
+Columns names : 
 ['dt_start_utc', 'power_act_21', 'power_act_24', 'power_act_47' .....]
 
 
@@ -65,7 +65,7 @@ All the columns contains missing values only for 'power_act_21' its 1.5% whereas
 
 In total we have 23 columns and 66020 rows 
 
-Coulmns names : 
+Columns names : 
 ['dt_start_utc', 'power_act_21', 'power_act_24', 'power_act_47' .....]
 
 
@@ -79,7 +79,7 @@ no null values for 'power_act_21'  whereas for other features >17% null values
 
 In total we have 17 columns and 16068 rows 
 
-Coulmns names : 
+Columns names : 
 ['date_start', 'date_end', 'product', 'reserve_type', 'total_min_capacity_price_eur_mw',#   
 'total_average_capacity_price_eur_mw', 'total_marginal_capacity_price_eur_mw','total_min_energy_price_eur_mwh', 'total_average_energy_price_eur_mwh', 'total_marginal_energy_price_eur_mwh', 'germany_min_capacity_price_eur_mw',
 'germany_average_capacity_price_eur_mw', 'germany_marginal_capacity_price_eur_mw','germany_min_energy_price_eur_mwh',
@@ -93,13 +93,13 @@ date ranges from '2019-01-01' to  '2021-03-19'
 
 Date seems to be recorded for every hours (24 values for each days)
 
-Few columns contains missing values of about 37%
+240 missing values each in 6 columns: ['total_min_energy_price_eur_mwh', 'total_average_energy_price_eur_mwh', 'total_marginal_energy_price_eur_mwh', 'germany_min_energy_price_eur_mwh', 'germany_average_energy_price_eur_mwh', 'germany_marginal_energy_price_eur_mwh'] 
 
 ## 'regelleistung_demand.csv'
 
 In total we have 6 columns and 16188 rows 
 
-Coulmns names : ['date_start', 'date_end', 'product', 'total_demand_mw',
+Columns names : ['date_start', 'date_end', 'product', 'total_demand_mw',
     'germany_block_demand_mw', 'reserve_type']
 
 2 unique reserve type ['MRL', 'SRL']
@@ -110,4 +110,52 @@ date ranges from '2019-01-01' to  '2021-03-18'
 
 Date seems to be recorded for every hours (24 values for each days)
 
-no missing values 
+no missing values
+
+## 'onlinehochrechnung_solar_mw.csv'
+
+In total we have 6 columns and 83,519 rows
+
+Columns names: ['dt_start_utc', 'fiftyhertz', 'tennet', 'amprion', 'transnetbw', 'nrv']
+
+data ranges from '2011-12-31 23:00:00' to '2021-07-11 21:00:00'
+
+Data is recorded for every 60 minutes
+
+no missing values
+
+## 'onlinehochrechnung_windonshore_mw.csv'
+
+In total we have 6 columns and 83,279 rows
+
+Columns names: ['dt_start_utc', 'fiftyhertz', 'tennet', 'amprion', 'transnetbw', 'nrv']
+
+data ranges from '2011-12-31 23:00:00' to '2021-07-01 21:00:00'
+
+Data is recorded for every 60 minutes
+
+no missing values
+
+## 'onlinehochrechnung_windoffshore_mw.csv'
+
+In total we have 6 columns and 74,735 rows
+
+Columns names: ['dt_start_utc', 'fiftyhertz', 'tennet', 'amprion', 'transnetbw', 'nrv']
+
+data ranges from '2012-12-31 23:00:00' to '2021-07-11 21:00:00'
+
+Data is recorded for every 60 minutes
+
+no missing values
+
+## 'einspeisedaten_gen_wind_speed.csv'
+
+In total we have 3 columns and 6,548,085 rows
+
+Columns names: ['dt_start_utc', 'voronoi_area_id', 'windspeed_ms']
+
+data ranges from '2018-12-31 23:00:00' to '2020-09-30 23:45:00'
+
+Data is recorded for every 15 minutes
+
+no missing values
